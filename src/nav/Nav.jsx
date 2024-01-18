@@ -1,4 +1,5 @@
 import "./nav.css";
+import Group from "./Group.png"
 
 
 function Nav() {
@@ -13,7 +14,7 @@ function Nav() {
                         <div className="line"></div>
                     </div>
                     <div className="img-div">
-                        <img src="Group.png" alt="" />
+                        <img src={Group} alt="" />
                     </div>
                     <div className="icon" style={{ width: '20%', display: 'flex', justifyContent: 'end', gap: '10px' }}>
                         <div className="select_box" style={{ cursor: 'pointer', display: 'flex' }}>
