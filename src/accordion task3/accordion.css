@@ -1,0 +1,21 @@
+
+.content{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+} 
+.cart{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    margin: 20px 0px;
+    cursor: pointer;
+    
+}
+.textMini{
+   background-color: aliceblue;
+   padding: 5px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px gray;
+}
