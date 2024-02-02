@@ -5,13 +5,17 @@ import Dropdown from "./dropdown task4/drop"
 import LiveFeed from "./contex task5/LiveFeed"
 import { UserContext } from './Context'
 import Form from "./form task 6/form"
+import PortalExample from "./portal task 7/example/PortalExample"
 
 function App() {
   return (
     <>
       <Nav />
+
       <Userlist />
+
       <Accordion />
+      
       <Dropdown />
 
       <UserContext.Provider>
@@ -19,6 +23,8 @@ function App() {
       </UserContext.Provider>
 
       <Form/>
+
+      <PortalExample/>
     </>
   )
 
