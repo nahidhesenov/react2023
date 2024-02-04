@@ -1,0 +1,29 @@
+.todoContent{
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.todoButton {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    background-color: whitesmoke;
+    transition: 400ms;
+}
+
+.todoButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.todoX{
+    margin: 10px;
+    border: none;
+    background: none;
+}

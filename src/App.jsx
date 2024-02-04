@@ -6,8 +6,9 @@ import LiveFeed from "./contex task5/LiveFeed"
 import { UserContext } from './Context'
 import Form from "./form task 6/form"
 import PortalExample from "./portal task 7/example/PortalExample"
+import { TodoList } from "./reducer  task 8/TodoList"
 
-function App() {
+export default function App() {
   return (
     <>
       <Nav />
@@ -25,10 +26,10 @@ function App() {
       <Form/>
 
       <PortalExample/>
+
+      <TodoList/>
     </>
   )
 
-
 }
 
-export default App
