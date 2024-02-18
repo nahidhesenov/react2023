@@ -14,6 +14,9 @@ import Links from "./navigation task 9/Link"
 import { DilContext } from "./dil secimi task 10/DilContext"
 import DilSecimi from "./dil secimi task 10/DilSecimi"
 import Text from "./dil secimi task 10/Text"
+import LinkSidebar from "./sidebar task 11/LinkSidebar"
+import Sidebar from "./sidebar task 11/Sidebar"
+import Main from "./sidebar task 11/Main"
 
 export default function App() {
   return (
@@ -42,11 +45,18 @@ export default function App() {
       </Routes>
 
       <DilContext>
-        <div style={{height:'50vh'}} className="container">
+        <div style={{ height: '50vh' ,display:'flex',alignItems:'center',justifyContent:'center' ,flexDirection:'column' }} className="container">
           <DilSecimi />
           <Text />
         </div>
       </DilContext>
+
+
+      <LinkSidebar />
+      <Routes>
+        <Route path="/sidebar" element={<Sidebar />} />
+        <Route path="/main" element={<Main />} />
+      </Routes>
     </>
   )
 

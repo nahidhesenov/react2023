@@ -1,0 +1,15 @@
+.link2{
+    font-size: xx-large;
+    margin: 5px;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 500ms;
+    box-shadow: 0px 0px 20px gray;
+}
+.link2:hover{
+    color: white;
+    background-color: green;
+
+
+}
