@@ -11,6 +11,9 @@ import Contact from "./navigation task 9/Contact/Contact"
 import Dashboard from "./navigation task 9/Dashboard/Dashborad"
 import Products from "./navigation task 9/Products/Products"
 import Links from "./navigation task 9/Link"
+import { DilContext } from "./dil secimi task 10/DilContext"
+import DilSecimi from "./dil secimi task 10/DilSecimi"
+import Text from "./dil secimi task 10/Text"
 
 export default function App() {
   return (
@@ -29,13 +32,21 @@ export default function App() {
 
       <TodoList />
 
-      <Links/> 
+      <Links />
       <Routes>
+        <Route path="/" element={<About />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/products" element={<Products />} />
       </Routes>
+
+      <DilContext>
+        <div style={{height:'50vh'}} className="container">
+          <DilSecimi />
+          <Text />
+        </div>
+      </DilContext>
     </>
   )
 
